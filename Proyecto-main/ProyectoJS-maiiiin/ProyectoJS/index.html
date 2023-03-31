@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <link rel="icon" type="image/svg+xml" href="" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Shopping Cart Js</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" type="text/css" href="sweetAlert.css">
+    
+</head>
+<body>
+    <header>
+        <div class="header-section container">
+            <img class="logo" src="imagenes/pngwing.com.png" alt="">
+            <div>
+                <img onclick="showCart(this)" class="cart" src="imagenes/carrito.png" alt="">
+                <p class="count-product">0</p>
+            </div>
+            <div class="cart-products" id="products-id">
+                <p class="close-btn" onclick="closeBtn()">X</p>
+                <h3>Mi carrito</h3>
+                <div class="card-items">
+                    
+                </div>
+                <h2>Total: $<strong class="price-total">0</strong></h2>
+                <a href="" class="btn-comprar" data-id="">COMPRAR</a>
+                
+
+                
+
+            </div>
+        </div>
+    </header>
+    <section class="container">
+        <div class="products">
+            <div class="carts">
+                <div>
+                    <img src="imagenes/CamisaV.jpg" alt="">
+                    <p><span>102</span> USD</p>
+                </div>
+                <p class="title">Camisa Longoria Versace, edición limitada.</p>
+                <a href="" data-id="1" class="btn-add-cart">add to cart</a>
+            </div>
+            <div class="carts">
+                <div>
+                    <img src="imagenes/CamperaV.jpg" alt="">
+                    <p><span>247</span> USD</p>
+                </div>
+                <p class="title"> Campera Longoria Versace, edición limitada</p>
+                <a href="" class="btn-add-cart" data-id="2">add to cart</a>
+            </div>
+            <div class="carts">
+                <div>
+                    <img src="imagenes/ShortV.jpg" alt="">
+                    <p><span>90</span> USD</p>
+                </div>
+                <p class="title"> Short Longoria Versace, edición limitada. </p>
+                <a href="" data-id="3" class="btn-add-cart">add to cart</a>
+            </div>
+            <div class="carts">
+                <div>
+                    <img src="imagenes/ZapatosV.jpg" alt="">
+                    <p><span>370</span> USD</p>
+                </div>
+                <p class="title"> Zapatos Longoria Versace, edición limitada</p>
+                <a href="" data-id="4" class="btn-add-cart">add to cart</a>
+            </div>
+        
+        </div>
+    </section>
+
+    <footer>
+
+    </footer>
+
+
+    
+    <script src="script.js" ></script>
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+    <script src="sweetAlert.js"></script>
+    
+</body>
+</html>
